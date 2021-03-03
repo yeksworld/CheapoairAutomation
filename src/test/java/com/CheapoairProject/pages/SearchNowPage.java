@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class SearchNowPage {
     public SearchNowPage(){ PageFactory.initElements(Driver.getDriver(),this);
     }
@@ -14,5 +16,15 @@ public class SearchNowPage {
 
     @FindBy(id = "ember532")
     public WebElement From;
+
+    //css class oldugu icin '.'
+    //id olsaydi '#'
+    @FindBy(css =".suggestion-box__menu.icon")
+    public List<WebElement> FromList;
+
+    @FindBy(css = ".focused")
+    public WebElement WebelementFocused;
+
+
 
 }

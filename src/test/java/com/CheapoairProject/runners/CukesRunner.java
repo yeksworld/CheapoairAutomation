@@ -10,13 +10,8 @@ import org.junit.runner.RunWith;
                 "html:target/default-html-reports"},
         features = "src/test/resources/features",
         glue = "com/CheapoairProject/step_definitions",
-        dryRun = true,
+        dryRun = false,
         tags = "@searchBox"
-
-
-
-
-
 
 
 )
